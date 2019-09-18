@@ -1,6 +1,6 @@
 {
   "name": "sails-graphql-glue",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "a glue for express-graphql and sails framework",
   "main": "lib/sails-graphql-glue.js",
   "repository": "https://github.com/ryanhs/sails-graphql-glue",
