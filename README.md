@@ -73,4 +73,4 @@ this function is to glue express-graphql into sails compatible.
 
 ### License
 
-hmm currently WTFPL
+MIT
