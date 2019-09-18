@@ -76,8 +76,10 @@ this function is to glue express-graphql into sails compatible.
 A Resolver in graphql have this common format:
 `(parent, args, context, info) => ...`
 
-therefore, to make it compatible with machine inputs,
-the parameters changed into `$parent`, `$context`, `$info`. parameters from `arg` extracted into normal machine `inputs`.
+Therefore, to make it compatible with machine inputs,
+the parameters changed into `$parent`, `$context`, `$info`.
+
+Parameters from `arg` extracted into normal machine `inputs`.
 
 ```javascript
 // automatically added into action/machine inputs
