@@ -85,17 +85,17 @@ the parameters changed into `$parent`, `$context`, `$info`. parameters from `arg
   "$parent": {
     description: "parent",
     type: 'ref',
-    defaultsTo: null,
+    defaultsTo: {},
   },
   "$context": {
     description: "context",
     type: 'ref',
-    defaultsTo: null,
+    defaultsTo: {},
   },
   "$info": {
     description: "info",
     type: 'ref',
-    defaultsTo: null,
+    defaultsTo: {},
   },
 }
 ```
@@ -107,6 +107,25 @@ fn: async ({ $context, name = "test" }) => {
   console.log(Object.keys($context));
   return name
 }
+
+// console:
+// [
+//   ...
+//   'headers',
+//   ...
+//   'url',
+//   ...
+//   'query',
+//   ...
+//   'cookies',
+//   ...
+//   'session',
+//   'file',
+//   'body',
+//   '_body',
+//   ...
+// ]
+
 ```
 
 ### License
