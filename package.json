@@ -6,6 +6,9 @@
   "repository": "https://github.com/ryanhs/sails-graphql-glue",
   "author": "ryanhs <mr.ryansilalahi@gmail.com>",
   "license": "MIT",
+  "engines" : {
+    "node" : ">=8.11.0"
+  },
   "devDependencies": {
     "bluebird": "^3.5.5",
     "express-graphql": "^0.9.0",
