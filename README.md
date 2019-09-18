@@ -1,6 +1,6 @@
 # Sails Graphql Glue
 
-[![npm version](https://badge.fury.io/js/sails-graphql-glue.svg)](https://badge.fury.io/js/sails-graphql-glue)  [![Coverage Status](https://coveralls.io/repos/github/ryanhs/sails-graphql-glue/badge.svg?branch=master)](https://coveralls.io/github/ryanhs/sails-graphql-glue?branch=master)  ![node](https://img.shields.io/node/v/sails-graphql-glue)
+[![npm version](https://badge.fury.io/js/sails-graphql-glue.svg)](https://badge.fury.io/js/sails-graphql-glue)  [![Coverage Status](https://coveralls.io/repos/github/ryanhs/sails-graphql-glue/badge.svg?branch=master)](https://coveralls.io/github/ryanhs/sails-graphql-glue?branch=master)  ![node](https://img.shields.io/node/v/sails-graphql-glue)  ![npm bundle size](https://img.shields.io/bundlephobia/min/sails-graphql-glue)
 
 this package is intended to make a glue for `express-graphql` and `sails` framework.
 
