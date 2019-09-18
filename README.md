@@ -55,21 +55,59 @@ module.exports.routes = {
 ```
 
 
-### actionAsResolver()
+### Func: actionAsResolver()
 
 This function is to wrap sails action2 into a resolver. so you can use your current action freely.
 Example: `actionAsResolver(require('./api/hello'))`
 
-### serve()
+### Func: serve()
 
 this function is to glue express-graphql into sails compatible.
 
-#### parameters
+###### + parameters
 
 - typeDefs `graphql schema`
 - resolvers `root resolvers`
 - debug `just to make sure json pretty print, GraphiQL, and full error reporting`
 
+
+### Resolver (parent, context, info)
+
+A Resolver in graphql have this common format:
+`(parent, args, context, info) => ...`
+
+therefore, to make it compatible with machine inputs,
+the parameters changed into `$parent`, `$context`, `$info`. parameters from `arg` extracted into normal machine `inputs`.
+
+```javascript
+// automatically added into action/machine inputs
+{
+  "$parent": {
+    description: "parent",
+    type: 'ref',
+    defaultsTo: null,
+  },
+  "$context": {
+    description: "context",
+    type: 'ref',
+    defaultsTo: null,
+  },
+  "$info": {
+    description: "info",
+    type: 'ref',
+    defaultsTo: null,
+  },
+}
+```
+
+you can use context (req), as example:
+
+```javascript
+fn: async ({ $context, name = "test" }) => {
+  console.log(Object.keys($context));
+  return name
+}
+```
 
 ### License
 
