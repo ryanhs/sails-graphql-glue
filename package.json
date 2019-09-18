@@ -1,0 +1,16 @@
+{
+  "name": "sails-graphql-glue",
+  "version": "0.0.1",
+  "description": "a glue for express-graphql and sails framework",
+  "main": "lib/sails-graphql-glue.js",
+  "repository": "https://github.com/ryanhs/sails-graphql-glue",
+  "author": "ryanhs <mr.ryansilalahi@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "bluebird": "^3.5.5",
+    "express-graphql": "^0.9.0",
+    "graphql-tools": "^4.0.5",
+    "lodash": "^4.17.15",
+    "machine": "^15.2.2"
+  }
+}
