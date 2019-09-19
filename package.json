@@ -9,7 +9,7 @@
   "engines": {
     "node": ">=8.11"
   },
-  "devDependencies": {
+  "dependencies": {
     "bluebird": "^3.5.5",
     "express-graphql": "^0.9.0",
     "graphql-tools": "^4.0.5",
