@@ -3,7 +3,14 @@
   "version": "1.0.1",
   "description": "a glue for express-graphql and sails framework",
   "main": "lib/sails-graphql-glue.js",
-  "repository": "https://github.com/ryanhs/sails-graphql-glue",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ryanhs/sails-graphql-glue.git"
+  },
+  "keywords": [
+    "sails",
+    "graphql"
+  ],
   "author": "ryanhs <mr.ryansilalahi@gmail.com>",
   "license": "MIT",
   "engines": {
