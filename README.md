@@ -140,7 +140,8 @@ module.exports = {
   inputs: {},
   exits: {},
   fn: async function() {
-    sails.log.info('what is this', {req: Object.keys(this)})
+
+    console.log(this.req.headers)
 
     return ({})
   }
