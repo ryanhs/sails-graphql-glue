@@ -130,6 +130,26 @@ fn: async ({ $context, name = "test" }) => {
 
 ```
 
+### this.req
+
+```javascript
+
+module.exports = {
+  friendlyName: 'Me',
+  description: 'Get Login Information.',
+  inputs: {},
+  exits: {},
+  fn: async function() {
+    sails.log.info('what is this', {req: Object.keys(this)})
+
+    return ({})
+  }
+};
+
+```
+
+In those example above, the `this.req` will be assigned of `$context` or `request object`. but in **arrow function**, it will not. since [You cannot "rebind" an arrow function. It will always be called with the context in which it was defined. Just use a normal function.](http://www.ecma-international.org/ecma-262/6.0/#sec-arrow-function-definitions-runtime-semantics-evaluation)
+
 ### License
 
 MIT
