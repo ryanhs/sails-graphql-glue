@@ -20,6 +20,7 @@
     "bluebird": "^3.5.5",
     "express-graphql": "^0.9.0",
     "flaverr": "^1.10.0",
+    "graphql-disable-introspection": "^1.1.0",
     "graphql-tools": "^4.0.5",
     "lodash": "^4.17.15",
     "machine": "^15.2.2",

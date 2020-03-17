@@ -102,6 +102,11 @@ flaverr@^1.10.0, flaverr@^1.5.1, flaverr@^1.7.0:
   dependencies:
     "@sailshq/lodash" "^3.10.2"
 
+graphql-disable-introspection@^1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/graphql-disable-introspection/-/graphql-disable-introspection-1.1.0.tgz#6ac86aaf64e64979435f12e0851f142262509885"
+  integrity sha512-OXCgpr7jQH+4O1QLlyMxS5R/vZY3mGoE5swl1Ghw2A/eMb0yANFW8KadsR5lvXHfsrHjUjeTGzE6pRx6MjffDA==
+
 graphql-tools@^4.0.5:
   version "4.0.5"
   resolved "https://registry.yarnpkg.com/graphql-tools/-/graphql-tools-4.0.5.tgz#d2b41ee0a330bfef833e5cdae7e1f0b0d86b1754"
